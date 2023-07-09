@@ -1,0 +1,284 @@
+/* BODY */
+
+.bodySVG {
+    transition: all 300ms;
+}
+
+#body .bodySVG.hidden:nth-child(1) {
+    transform: translate(-100%, -100%);
+}
+
+#body .bodySVG.hidden:nth-child(2) {
+    transform: translate(-100%, 100%);
+}
+
+#body .bodySVG.hidden:nth-child(3) {
+    transform: translate(100%, -100%);
+}
+
+#body .bodySVG.hidden:nth-child(4) {
+    transform: translate(100%, 100%);
+}
+
+/* --- */
+
+#body .main {
+    transition: left 300ms, transform 300ms;
+}
+
+#body.toLeft .main {
+    left: 0px;
+    transform: translateX(0%);
+    background-color: white;
+}
+
+/* --- */
+
+#body .main .qyu {
+    transition: opacity 300ms;
+}
+
+#body.toLeft .main .qyu {
+    opacity: 0;
+}
+
+/* --- */
+
+#body .main .mar {
+    transition: opacity 300ms;
+}
+
+#body.toLeft .main .mar {
+    opacity: 0;
+}
+
+/* --- */
+
+#body .main .questionSuperContainer {
+    transition: left 300ms, width 300ms, height 300ms, transform 300ms;
+}
+
+#body.toLeft .main .questionSuperContainer {
+    left: 0px;
+    width: 27.4em;
+    transform: translateX(0%);
+}
+
+#body.expand .main .questionSuperContainer {
+    height: 33.055em;
+}
+
+/* --- */
+
+#body .main .questionContainer {
+    transition: left 300ms, transform 300ms;
+}
+
+#body.toLeft .main .questionContainer {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* --- */
+
+#body .main .questionContainer h1 {
+    transition: font-size 300ms;
+}
+
+#body.expand .main .questionContainer h1 {
+    font-size: 2.95em;
+}
+
+
+/* MAINPRES ANIMATION */
+#mainpres .corner div {
+    transition: background-color 300ms;
+}
+
+#mainpres.red .corner div {
+    background-color: #FFE4E4;
+}
+
+#mainpres.blue .corner div {
+    background-color: #E7FFFB;
+}
+
+/* --- */
+
+#mainpres .progressBar {
+    transition: background-color 300ms;
+}
+
+#mainpres.red .progressBar {
+    background-color: #FFE4E4;
+}
+
+#mainpres.blue .progressBar {
+    background-color: #E7FFFB;
+}
+
+/* --- */
+
+#mainpres .header.first {
+    transition: opacity 300ms;
+    opacity: 1;
+}
+
+#mainpres.red .header.first {
+    opacity: 0.35;
+}
+
+#mainpres.blue .header.first {
+    opacity: 0.35;
+}
+
+/* --- */
+
+#mainpres .header.second {
+    transition: opacity 300ms;
+    opacity: 0.35;
+}
+
+#mainpres.red .header.second {
+    opacity: 1;
+}
+
+#mainpres.blue .header.second {
+    opacity: 0.35;
+}
+
+/* --- */
+
+#mainpres .header.third {
+    transition: opacity 300ms;
+    opacity: 0.35;
+}
+
+#mainpres.red .header.third {
+    opacity: 0.35;
+}
+
+#mainpres.blue .header.third {
+    opacity: 1;
+}
+
+/* --- */
+
+#mainpres .line.first {
+    transition: opacity 300ms;
+    opacity: 1;
+}
+
+#mainpres.red .line.first {
+    opacity: 1;
+}
+
+#mainpres.blue .line.first {
+    opacity: 0.35;
+}
+
+/* --- */
+
+#mainpres .line.second {
+    transition: opacity 300ms;
+    opacity: 0.35;
+}
+
+#mainpres.red .line.second {
+    opacity: 1;
+}
+
+#mainpres.blue .line.second {
+    opacity: 1;
+}
+
+/* Entrance Animation */
+#mainpres:not(.visible) .header {
+    opacity: 1;
+}
+
+#mainpres:not(.visible) .line {
+    opacity: 0;
+}
+
+/* --- */
+
+#mainpres .timeline {
+    transition: border-right-width 300ms;
+}
+
+
+#mainpres:not(.visible) .timeline {
+    border-right-width: 0px;
+}
+
+/* --- */
+
+#mainpres .main {
+    transition: opacity 300ms 200ms;
+}
+
+#mainpres:not(.visible) .main {
+    opacity: 0;
+}
+
+/* --- */
+
+#mainpres .corner {
+    transition: opacity 300ms;
+}
+
+#mainpres:not(.visible) .corner {
+    opacity: 0;
+}
+
+/* --- */
+
+#mainpres .corner .up {
+    transition: top 300ms, right 300ms, background-color 300ms;
+}
+
+#mainpres:not(.visible) .corner .up {
+    top: -10em;
+    right: -10em;
+}
+
+/* --- */
+
+#mainpres .corner .bot {
+    transition: bottom 300ms, right 300ms, background-color 300ms;
+}
+
+
+#mainpres:not(.visible) .corner .bot {
+    bottom: -10em;
+    right: -10em;
+}
+
+/* --- */
+
+#mainpres:not(.visible) .progressBar {
+    opacity: 0;
+}
+
+/* --- */
+
+#mainpres {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+#mainpres.finalize {
+    opacity: 0;
+}
+
+
+/* CONTACT ANIMATION */
+#contact {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+#contact.visible {
+    opacity: 1;
+}

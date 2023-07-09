@@ -1,0 +1,19 @@
+#tujuan.mainContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tujuan .par {
+    width: 50.95em;
+}
+
+#tujuan .par p {
+    font-size: 2.95em;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+}

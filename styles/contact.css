@@ -1,0 +1,114 @@
+#contact.superContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    overflow: hidden;
+}
+
+#contact a {
+    color: black;
+    display: block;
+}
+
+#contact .background {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#contact .background svg {
+    width: 100%;
+    height: 100%;
+} 
+
+#contact .header {
+    position: absolute;
+    top: 5.238em;
+}
+
+#contact .header h1 {
+    font-size: 3.7124em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+#contact .sosmedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5em;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.9em;
+}
+
+#contact .icon {
+    width: 7em;
+    height: 7em;
+}
+
+#contact .icon svg {
+    width: 100%;
+    height: 100%;
+
+    stroke: black;
+    stroke-width: 0.0476em;
+    stroke-linejoin: round;
+}
+
+#contact .icon path {
+    stroke: black;
+    stroke-width: 0.0476em;
+    stroke-linejoin: round;
+}
+
+#contact .txtContainer {
+    width: 25.761em;
+    height: 3.809em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid black 0.0476em;
+    border-radius: 999em;
+
+    box-shadow: -0.0952em 0.19em 0px rgba(0, 0, 0, 0.35);
+    background-color: white;
+}
+
+#contact .txt {
+    width: max-content;
+    height: max-content;
+
+    font-size: 2.38em;
+    font-weight: 400;
+    letter-spacing: 0.135em;
+
+    text-decoration: none;
+}
+
+#contact .gtc {
+    position: absolute;
+    bottom: 4em;
+}
+
+#contact .gtc h1 { 
+    font-size: 3.238em;
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 1.5em;
+}

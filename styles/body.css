@@ -1,0 +1,167 @@
+#body.superContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 200vh;
+
+    overflow: hidden;
+}
+
+#body .background {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    overflow: hidden;
+}
+
+#body .background svg {
+    position: absolute;
+    width: 12em;
+    aspect-ratio: 1;
+}
+
+#body .background svg:nth-child(1) {
+    top: -5em;
+    left: 0px;
+}
+
+#body .background svg:nth-child(2) {
+    bottom: -5em;
+    left: 0px;
+}
+
+#body .background svg:nth-child(3) {
+    top: -5em;
+    right: 0px;
+}
+
+#body .background svg:nth-child(4) {
+    bottom: -5em;
+    right: 0px;
+}
+
+#body .main {
+    width: 45.76em;
+    height: 27.85em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+#body .lineContainer {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: white;
+}
+
+.rbcon {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    transform-origin: 100% 0%;
+}
+
+#body .lineContainer .line {
+    position: absolute;
+}
+
+#body .hor {
+    width: 100%;
+    height: 0.3em;
+
+    background-color: black;
+    transform-origin: 100% 100%;
+}
+
+#body .bot {
+    bottom: 0px;
+}
+
+#body .ver {
+    width: 0.3em;
+    height: 100%;
+    top: 0px;
+
+    background-color: black;
+    transform-origin: 0% 0%;
+}
+
+#body .right {
+    right: 0px;
+    transform-origin: 100% 0%;
+}
+
+
+#body .questionSuperContainer {
+    width: calc(100% - 15.714em);
+    height: calc(100% - 11.4em);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#body .questionContainer {
+    width: max-content;
+    height: max-content;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: absolute;
+    left: 6.7111em;
+}
+
+#body .questionContainer:nth-child(1) {
+    top: 0px;
+}
+
+#body .questionContainer:nth-child(3) {
+    bottom: 0px;
+}
+
+#body .questionContainer h1 {
+    font-size: 2.57em;
+    letter-spacing: 0.21em;
+    font-weight: 700;
+    white-space: pre;
+}
+
+#body .qyu {
+    position: absolute;
+    left: 0px;
+    transform: translateX(-100%);
+}
+
+#body .mar {
+    position: absolute;
+    right: 0px;
+    transform: translateX(100%);
+}

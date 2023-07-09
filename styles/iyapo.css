@@ -1,0 +1,38 @@
+#iyapo1.mainContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3.52em;
+}
+
+#iyapo1 .mainHeader {
+    font-size: 3.714em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+#iyapo1 .content {
+    width: 51em;
+    height: 29.8em;
+}
+
+#iyapo1 .contentChild {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid black 0.0476em;
+    overflow: hidden;
+}
+
+#iyapo1 .contentChild img {
+    width: 100%;
+    align-self: flex-start;
+}

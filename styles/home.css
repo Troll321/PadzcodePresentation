@@ -1,0 +1,68 @@
+#home.superContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .title {
+    width: max-content;
+    height: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8em;
+
+    background-image: radial-gradient(64.55% 64.55% at 50.00% 50.00%, #FFF 32.29%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+#home .title h1 {
+    font-size: 3.76em;
+    font-weight: 700;
+    letter-spacing: 0.21em;
+}
+
+#home .title span {
+    width: max-content;
+    height: max-content;
+}
+
+#home .line {
+    width: 0.285em;
+    height: 300vh;
+    
+    position: absolute;
+    right: 50%;
+    transform: translate(-76%, 3.5em);
+    background-color: black;
+}
+
+#home .child {
+    width: max-content;
+    height: max-content;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
+    position: absolute;
+}
+
+#home .child h1 {
+    position: relative;
+
+    font-size: 2.95em;
+    font-weight: 700;
+    letter-spacing: 0.21em;
+
+    color: white;
+    text-shadow:
+    -1px -1px 0px #000,  
+     1px -1px 0px #000,
+     -1px 1px 0px #000,
+      1px 1px 0px #000;
+}

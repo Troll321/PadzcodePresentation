@@ -1,0 +1,118 @@
+#mainpres.superContainer {
+    width: 100%; 
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#mainpres .fixedContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#mainpres .placeholder {
+    width: 27.4em;
+    height: 100%;
+    z-index: -1;
+}
+
+#mainpres .corner {
+    width: max-content;
+    height: 100%;
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    z-index: 999999999;
+}
+
+#mainpres .corner div {
+    width: 11.9em;
+    height: 11.9em;
+
+    position: fixed;
+    right: 0px;
+
+    background-color: #E6FFE3;
+    border: 0.0476em black solid;
+}
+
+#mainpres .corner .up {
+    top: 0px;
+    transform: translate(69%, -31.5%) rotateZ(-29.5deg);
+    box-shadow: -0.095em 0.38em 0px rgba(0, 0, 0, 0.65);
+}
+
+#mainpres .corner .bot {
+    bottom: 0px;
+    transform: translate(69%, 31.5%) rotateZ(29.5deg);
+    box-shadow: -0.095em -0.38em 0px rgba(0, 0, 0, 0.65);
+}
+
+#mainpres .timeline {
+    width: 27.4em;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-right: solid black 0.52em;
+}
+
+#mainpres .progressBar {
+    width: 1.14em;
+    height: 100%;
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translateX(100%);
+    z-index: -1;
+
+    border-right: solid black 0.0476em;
+    border-bottom: solid black 0.0476em;
+    background-color: #E6FFE3;
+}
+
+#mainpres .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.7em;
+}
+
+#mainpres .line {
+    width: 0.142em;
+    height: 5.71em;
+
+    background-color: black;
+    opacity: 0.35;
+}
+
+#mainpres .header {
+    font-size: 2.95em;
+    font-weight: 700;
+    letter-spacing: 0.21em;
+
+    opacity: 0.35;
+}
+
+#mainpres .header a {
+    color: black;
+    text-decoration: none;
+}
+
+#mainpres .main {
+    width: calc(100% - 27.4em - 1.14em);
+    height: 100%;
+}
