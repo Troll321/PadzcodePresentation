@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="./styles/collection.css">
     <link rel="stylesheet" href="./styles/heafot.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="./scripts/navigation.js"></script>
 </head>
 <body>
     <nav class="desktop">
@@ -34,15 +37,20 @@
             </div>
         </div>
     </nav>
-    <nav class="mobile">
+    <div class="navButton" id="navButton">
+        <div class="navButtonIsi"></div>
+        <div class="navButtonIsi"></div>
+        <div class="navButtonIsi"></div>
+    </div>
+    <nav class="mobile" id="mobileNav">
         <div class="innerContainer">
             <div class="titleContainer">
                 <div class="navButtonContainer">
-                    <div class="navButton">
+                    <!-- <div class="navButton" id="navButton">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </div>
+                    </div> -->
                 </div>
                 <a href class="title">PADZCODE</a>
             </div>
@@ -67,7 +75,6 @@
             <footer class="watermark"><p>@Padzcode x Troll321 </p></footer>
         </div>
     </nav>
-
     <section  id="collection" class="superContainer">
         <div class="background">
             <svg width="1920" height="1489" viewBox="0 0 1920 1489" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,6 +159,9 @@
             </a>
         </div>
     </section>
+
+    <br><br><br><br>
+    <br><br><br><br>
 
     <footer class="watermark"><p>@Padzcode x Troll321</p></footer>
 </body>

@@ -1,7 +1,6 @@
-import * as HSEL from "./HTMLSEL.js";
-
-var ww = window.innerWidth;
-var wh = window.innerHeight;
+import * as HSEL from "../HTMLSEL.js";
+import { homeLoop } from "./homeAnimation.js";
+import { ww, wh } from "./constant.js";
 
 HSEL.init([wh * 2, wh * 5, wh, wh], [0, 0], [0, wh]);
 
@@ -15,17 +14,19 @@ const bsvg = document.getElementsByClassName("bodySVG");
 const body = document.getElementById("body");
 const homeline = document.getElementById("homeline");
 
+HSEL.register(0, [0, 1], true, homeLoop, ()=>{}, homeLoop);
+
 HSEL.register(0, [0.55, 1, 0.75], false,
     ()=>{
         for (let l = 0; l < bsvg.length; l++) {
             const elem = bsvg[l];
-            elem.classList.add("hidden");
+            elem.classList.remove("visible");
         }
     },
     ()=>{
         for (let l = 0; l < bsvg.length; l++) {
             const elem = bsvg[l];
-            elem.classList.remove("hidden");
+            elem.classList.add("visible");
         }
     }
 );
@@ -86,7 +87,7 @@ HSEL.register(0, [0.7], false,
     ()=>{
         for (let l = 0; l < bsvg.length; l++) {
             const elem = bsvg[l];
-            elem.classList.add("hidden");
+            elem.classList.remove("visible");
         }
     }
 );

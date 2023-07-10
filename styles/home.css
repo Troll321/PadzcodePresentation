@@ -50,6 +50,7 @@
     align-items: center;
     
     position: absolute;
+    z-index: -5;
 }
 
 #home .child h1 {
