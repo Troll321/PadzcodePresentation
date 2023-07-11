@@ -11,7 +11,7 @@ function inputHandler(e) {
     }
 
     const toAdd = (100-e.target.value) / 100 * (MAX - MIN) + MIN;
-    update([wh * 2 + toAdd, wh * 5 + toAdd, wh + toAdd], [toAdd, toAdd], [0, wh]);
+    update([wh * 6 + toAdd, wh * 5 + toAdd, wh + toAdd], [wh * 4 + toAdd, toAdd], [0, wh]);
 }
 
 for (let l = 0; l < sliderInputs.length; l++) {

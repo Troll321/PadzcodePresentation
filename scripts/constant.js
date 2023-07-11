@@ -10,5 +10,5 @@ window.addEventListener("resize", ()=>{
     MIN = -5 * wh;
     MAX = 5 * wh;
     const toAdd = (100-document.getElementsByClassName("sliderInput")[0].value) / 100 * (MAX - MIN) + MIN;
-    update([wh * 2 + toAdd, wh * 5 + toAdd, wh + toAdd], [toAdd, toAdd], [0, wh]);
+    update([wh * 6 + toAdd, wh * 5 + toAdd, wh + toAdd], [wh * 4 + toAdd, toAdd], [0, wh]);
 });

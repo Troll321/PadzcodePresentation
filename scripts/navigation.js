@@ -6,7 +6,8 @@ navButton.addEventListener("click", ()=>{
 })
 
 window.addEventListener("click", (e)=>{
-    if(e.target !== mobileNav && e.target !== navButton && e.target !== navButtonIsi[0] && e.target !== navButtonIsi[1] && e.target !== navButtonIsi[2] ) {
+    if(e.target !== mobileNav && e.target !== navButton && e.target !== navButtonIsi[0] && e.target !== navButtonIsi[1] && e.target !== navButtonIsi[2] && 
+        e.target !== document.getElementById("sliderInput") && e.target !== document.getElementsByClassName("innerContainer")[0]) {
         mobileNav.classList.remove("visible");
     }
 })

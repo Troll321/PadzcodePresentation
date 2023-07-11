@@ -2,7 +2,7 @@ import * as HSEL from "./HTMLSEL.js";
 import { homeLoop } from "./homeAnimation.js";
 import { ww, wh } from "./constant.js";
 
-HSEL.init([wh * 2, wh * 5, wh], [0, 0], [0, wh]);
+HSEL.init([wh * 6, wh * 5, wh], [wh * 4, 0], [0, wh]);
 
 // HSEL.register(0, [0, 1], true, ()=>{}, ()=>{}, (per)=>{console.log(per)});
 
@@ -33,13 +33,13 @@ HSEL.register(0, [0.55, 1, 0.75], false,
     }
 );
 
-HSEL.register(0, [0.55, 0.61], true,
+HSEL.register(0, [0.55, 0.65], true,
     ()=>{bodyLine[2].style.transform = "rotateZ(0deg)";},
     ()=>{bodyLine[2].style.transform = "rotateZ(-90deg)";},
     (percent)=>{bodyLine[2].style.transform = `rotateZ(${HSEL.countAP(percent, 0, -90)}deg)`;}
 );
 
-HSEL.register(0, [0.61, 0.67], true,
+HSEL.register(0, [0.58, 0.68], true,
     ()=>{
         rbcon.style.transform = "rotateZ(0deg)";
     },
@@ -51,7 +51,7 @@ HSEL.register(0, [0.61, 0.67], true,
     }
 );
 
-HSEL.register(0, [0.57, 0.63], true,
+HSEL.register(0, [0.6, 0.67], true,
     ()=>{
         bodyLine[3].style.transform = "rotateZ(0deg)";
     },
