@@ -7,7 +7,6 @@
     <title>Padzcode Presentation</title>
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./styles/body.css">
-    <link rel="stylesheet" href="./styles/collection.css">
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/heafot.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -18,19 +17,24 @@
     <link rel="stylesheet" href="./styles/ngapain2.css">
     <link rel="stylesheet" href="./styles/tujuan.css">
     <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" src="./scrollAnimation.js"></script>
+    <script type="module" src="./scripts/constant.js"></script>
+    <script type="module" src="./scripts/navigation.js"></script>
+    <script type="module" src="./scripts/scrollAnimation.js"></script>
+    <script type="module" src="./scripts/homeAnimation.js"></script>
+    <script type="module" src="./scripts/sensitivity.js"></script>
 </head>
 <body>
     <nav class="desktop">
-        <a href class="title">PADZCODE</a>
+        <a href="/" class="title">PADZCODE</a>
         <div class="navLinks">
             <a href="/" class="link">
                 Home
             </a>
-            <a href="/" class="link">
+            <a href="./collection.html" class="link">
                 Collection
             </a>
         </div>
@@ -41,27 +45,32 @@
                 </svg>
             </div>
             <div class="slider">
-                <input type="range">
+                <input type="range" class="sliderInput">
             </div>
         </div>
     </nav>
-    <nav class="mobile">
+    <div class="navButton" id="navButton">
+        <div class="navButtonIsi"></div>
+        <div class="navButtonIsi"></div>
+        <div class="navButtonIsi"></div>
+    </div>
+    <nav class="mobile" id="mobileNav">
         <div class="innerContainer">
             <div class="titleContainer">
                 <div class="navButtonContainer">
-                    <div class="navButton">
+                    <!-- <div class="navButton" id="navButton">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </div>
+                    </div> -->
                 </div>
-                <a href class="title">PADZCODE</a>
+                <a href="/" class="title">PADZCODE</a>
             </div>
             <div class="navLinks">
                 <a href="/" class="link">
                     <p>Home</p>
                 </a>
-                <a href="/" class="link">
+                <a href="./collection.html" class="link">
                     <p>Collection</p>
                 </a>
             </div>
@@ -72,7 +81,7 @@
                     </svg>
                 </div>
                 <div class="slider">
-                    <input type="range">
+                    <input type="range" class="sliderInput">
                 </div>
             </div>
             <footer class="watermark"><p>@Padzcode x Troll321 </p></footer>
@@ -95,12 +104,12 @@
                     </span>
                 </div>
         
-                <div class="child" style="bottom: 100px; right: 100px;">
+                <!-- <div class="child" style="bottom: 100px; right: 100px;">
                     <h1>Padz</h1>
                 </div>
                 <div class="child" style="top: 100px; left: 300px;">
                     <h1>Code</h1>
-                </div>
+                </div> -->
             </section>
 
             <section id="body" class="superContainer">
@@ -109,9 +118,9 @@
                 <circle cx="97.5" cy="140.5" r="237" fill="#FFFAFA" stroke="black"/>
                 </svg>
                 <svg class="bodySVG" width="335" height="426" viewBox="0 0 335 426" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="path-1-inside-1_60_30" fill="white">
-                <path d="M195 237.5C195 268.689 188.857 299.573 176.921 328.387C164.986 357.202 147.492 383.384 125.438 405.438C103.384 427.492 77.2021 444.986 48.3872 456.921C19.5724 468.857 -11.3111 475 -42.5001 475C-73.689 475 -104.573 468.857 -133.387 456.921C-162.202 444.986 -188.384 427.492 -210.438 405.438C-232.492 383.384 -249.986 357.202 -261.921 328.387C-273.857 299.572 -280 268.689 -280 237.5L-42.5 237.5H195Z"/>
-                </mask>
+                    <mask id="path-1-inside-1_60_30" fill="white">
+                        <path d="M195 237.5C195 268.689 188.857 299.573 176.921 328.387C164.986 357.202 147.492 383.384 125.438 405.438C103.384 427.492 77.2021 444.986 48.3872 456.921C19.5724 468.857 -11.3111 475 -42.5001 475C-73.689 475 -104.573 468.857 -133.387 456.921C-162.202 444.986 -188.384 427.492 -210.438 405.438C-232.492 383.384 -249.986 357.202 -261.921 328.387C-273.857 299.572 -280 268.689 -280 237.5L-42.5 237.5H195Z"/>
+                    </mask>
                 <path d="M195 237.5C195 268.689 188.857 299.573 176.921 328.387C164.986 357.202 147.492 383.384 125.438 405.438C103.384 427.492 77.2021 444.986 48.3872 456.921C19.5724 468.857 -11.3111 475 -42.5001 475C-73.689 475 -104.573 468.857 -133.387 456.921C-162.202 444.986 -188.384 427.492 -210.438 405.438C-232.492 383.384 -249.986 357.202 -261.921 328.387C-273.857 299.572 -280 268.689 -280 237.5L-42.5 237.5H195Z" fill="#FFF9C7" fill-opacity="0.35" stroke="black" stroke-width="2" mask="url(#path-1-inside-1_60_30)"/>
                 </svg>
                 <svg class="bodySVG" width="335" height="502" viewBox="0 0 335 502" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,15 +192,15 @@
                         <div id="progressBar" class="progressBar"></div>
                         <div class="container">
                             <span class="header first">
-                                <a href="/#tujuan">Tujuan</a>
+                                <a data-id="tujuan" class="hashLinks" href="/#tujuan">Tujuan</a>
                             </span>
                             <div class="line first"></div>
                             <span class="header second">
-                                <a href="/#ngapain1">Ngapain</a>
+                                <a data-id="ngapain1" class="hashLinks" href="/#ngapain1">Ngapain</a>
                             </span>
                             <div class="line second"></div>
                             <span class="header third">
-                                <a href="/#iyapo1">Iya po</a>
+                                <a data-id="iyapo1" class="hashLinks" href="/#iyapo1">Iya po</a>
                             </span>
                         </div>
                     </div>
@@ -284,6 +293,7 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                 </div>
             </section>
         </div>

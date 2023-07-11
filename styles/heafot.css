@@ -1,3 +1,31 @@
+.navButton {
+    width: 2.523em;
+    height: 2.523em;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.3em;
+
+    position: fixed;
+    top: 5vh;
+    left: 1.509em;
+
+    border: solid black 0.0476em;
+    box-shadow: -0.0476em 0.0952em 0px black;
+    border-radius: 0.619em;
+    background-color: white;
+
+    z-index: 9999999999999999999;
+}
+
+.navButton div {
+    width: 1.238em;
+    height: 0.19em;
+    background-color: black;
+}
+
 nav {
     z-index: 99999;
     background-color: white;
@@ -54,6 +82,7 @@ nav .link {
     font-size: 1.523em;
     font-weight: 600;
     letter-spacing: 0.21em;
+    opacity: 0.35;
 }
 
 nav .sensitivity {
@@ -91,6 +120,35 @@ nav .sensitivity input {
     height: 0.857em;
 
     display: block;
+    
+    appearance: none;
+    background-color: #E2E2E2;
+    border-radius: 999em;
+    border: solid black 0.0466em;
+}
+
+nav .sensitivity input::-webkit-slider-thumb {
+    width: 1.5em;
+    height: 1.5em;
+
+    appearance: none;
+
+    border: solid black 0.0467em;
+    box-shadow: 0px 0.0467em 0px black;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav .sensitivity input::-ms-thumb {
+    width: 1.5em;
+    height: 1.5em;
+
+    appearance: none;
+
+    border: solid black 0.0467em;
+    box-shadow: 0px 0.0467em 0px black;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .watermark {
@@ -133,7 +191,7 @@ nav.mobile {
     width: 15.09em;
     height: 100%;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -142,12 +200,6 @@ nav.mobile {
     border-right: solid black 0.0476em;
     box-shadow: 0.142em 0px 0px rgba(0, 0, 0, 0.25);
     background-color: white;
-}
-
-@media only screen and (min-width: 400px) {
-    nav.mobile {
-        display: none;
-    }
 }
 
 nav .innerContainer {
@@ -169,29 +221,6 @@ nav.mobile .title  {
 nav .navButtonContainer {
     width: 2.523em;
     height: 2.523em;
-}
-
-nav .navButton {
-    width: 2.523em;
-    height: 2.523em;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 0.3em;
-
-    position: fixed;
-
-    border: solid black 0.0476em;
-    box-shadow: -0.0476em 0.0952em 0px black;
-    border-radius: 0.619em;
-}
-
-nav .navButton div {
-    width: 1.238em;
-    height: 0.19em;
-    background-color: black;
 }
 
 nav.mobile .navLinks {

@@ -1,9 +1,8 @@
 import * as HSEL from "./HTMLSEL.js";
+import { homeLoop } from "./homeAnimation.js";
+import { ww, wh } from "./constant.js";
 
-var ww = window.innerWidth;
-var wh = window.innerHeight;
-
-HSEL.init([wh * 2, wh * 5, wh, wh], [0, 0], [0, wh]);
+HSEL.init([wh * 6, wh * 6, wh], [wh * 4, wh], [0, wh]);
 
 // HSEL.register(0, [0, 1], true, ()=>{}, ()=>{}, (per)=>{console.log(per)});
 
@@ -15,28 +14,32 @@ const bsvg = document.getElementsByClassName("bodySVG");
 const body = document.getElementById("body");
 const homeline = document.getElementById("homeline");
 
+HSEL.register(0, [0, 0.5], true, homeLoop, ()=>{}, homeLoop);
+
+// HSEL.register(0, [0, 1], true, ()=>{console.log(0)}, ()=>{console.log(1)}, (percent)=>{console.log(percent)});
+
 HSEL.register(0, [0.55, 1, 0.75], false,
     ()=>{
         for (let l = 0; l < bsvg.length; l++) {
             const elem = bsvg[l];
-            elem.classList.add("hidden");
+            elem.classList.remove("visible");
         }
     },
     ()=>{
         for (let l = 0; l < bsvg.length; l++) {
             const elem = bsvg[l];
-            elem.classList.remove("hidden");
+            elem.classList.add("visible");
         }
     }
 );
 
-HSEL.register(0, [0.55, 0.61], true,
+HSEL.register(0, [0.55, 0.65], true,
     ()=>{bodyLine[2].style.transform = "rotateZ(0deg)";},
     ()=>{bodyLine[2].style.transform = "rotateZ(-90deg)";},
     (percent)=>{bodyLine[2].style.transform = `rotateZ(${HSEL.countAP(percent, 0, -90)}deg)`;}
 );
 
-HSEL.register(0, [0.61, 0.67], true,
+HSEL.register(0, [0.58, 0.68], true,
     ()=>{
         rbcon.style.transform = "rotateZ(0deg)";
     },
@@ -48,7 +51,7 @@ HSEL.register(0, [0.61, 0.67], true,
     }
 );
 
-HSEL.register(0, [0.57, 0.63], true,
+HSEL.register(0, [0.6, 0.67], true,
     ()=>{
         bodyLine[3].style.transform = "rotateZ(0deg)";
     },
@@ -65,16 +68,19 @@ HSEL.register(0, [0.67, 0.75], true,
         // linecon.style.transform = "translateY(0%)";
         linecon.style.top = "0px";
         homeline.style.top = "0px";
+        homeline.style.height = `${2.6 * wh}px`;
     },
     ()=>{
         // linecon.style.transform = "translateY(-50%)";
         linecon.style.top = `${-wh}px`;
         homeline.style.top = `${-wh}px`;
+        homeline.style.height = `${2.6 * wh}px`;
     },
     (percent)=>{
         // linecon.style.transform = `translateY(${HSEL.countAP(percent, 0, -50)}%)`;
         linecon.style.top = `${HSEL.countAP(percent, 0, -wh)}px`;
         homeline.style.top = `${HSEL.countAP(percent, 0, -wh)}px`;
+        homeline.style.height = `${2.6 * wh}px`;
 
     }
 );
@@ -86,7 +92,7 @@ HSEL.register(0, [0.7], false,
     ()=>{
         for (let l = 0; l < bsvg.length; l++) {
             const elem = bsvg[l];
-            elem.classList.add("hidden");
+            elem.classList.remove("visible");
         }
     }
 );
@@ -177,3 +183,5 @@ HSEL.register(2, [0.2], false,
         contact.classList.add("visible");
     }
 );
+
+// HSEL.register(1, [0, 1], true, ()=>{console.log(window.scrollY)}, ()=>{console.log(window.scrollY)}, ()=>{console.log(window.scrollY)})

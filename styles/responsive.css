@@ -1,0 +1,113 @@
+@media only screen and (max-width: 600px) {
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: flex;
+        font-size: 4.5vw;
+    }
+
+    .navButton {
+        display: flex;
+        font-size: 4.5vw;
+    }
+
+    #home {
+        font-size: 2vw;
+    }
+
+    #body {
+        font-size: 1.2vw;
+    }
+
+    #body .background svg {
+        width: 24em;
+        height: 24em;
+    }
+
+    #body .main .questionSuperContainer {
+        width: 27.4em;
+    }
+
+    #body.expand .main .questionSuperContainer {
+        height: 54.7em;
+    }
+
+    #mainpres .timeline {
+        font-size: 1.2vw;
+    }
+
+    #mainpres .timeline .container {
+        row-gap: 8em;
+    }
+
+    #mainpres .main {
+        width: calc(100% - (27.4 * 1.2vw));
+    }
+
+    #mainpres .main > div {
+        width: 90%;
+
+        margin: 0px auto;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    #mainpres .main #tujuan {
+        margin-left: 2em;
+        text-align: start;
+    }
+
+    #mainpres .main #ngapain1 .logoContainer {
+        font-size: 0.9em;
+    }
+
+    #mainpres .main #ngapain2 .albel {
+        flex-direction: column;
+        row-gap: 3.047em;
+    }
+
+    #mainpres .main #ngapain2 .albel .arrow {
+        transform: rotateZ(90deg);
+    }
+
+    #mainpres .main #iyapo1 .content {
+        width: 90%;
+        height: max-content;
+    }
+
+    #mainpres .main #iyapo2 .content {
+        grid-template-columns: auto;
+        height: max-content;
+        width: max-content;
+
+        column-gap: 2.714em;
+        row-gap: 2.952em;
+    }
+
+    #contact {
+        font-size: 2vw;
+    }
+
+    #contact .sosmedContainer {
+        flex-direction: column;
+        row-gap: 10em;
+    }
+
+    #collection {
+        font-size: 2vw;
+    }
+
+    #collection .main {
+        width: 80%;
+        grid-template-columns: auto auto;
+        column-gap: auto;
+    }
+
+    #collection .main > a {
+        font-size: 1em;
+        align-self: center;
+        justify-self: center;
+    }
+}

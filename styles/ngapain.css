@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 1.75em;
+    row-gap: 5em;
 }
 
 #ngapain1.bwebContainer p {
@@ -23,4 +23,5 @@
 
 #ngapain1 .logoContainer svg {
     width: 8.142em;
+    height: max-content;
 }
