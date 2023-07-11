@@ -1,8 +1,8 @@
-import * as HSEL from "../HTMLSEL.js";
+import * as HSEL from "./HTMLSEL.js";
 import { homeLoop } from "./homeAnimation.js";
 import { ww, wh } from "./constant.js";
 
-HSEL.init([wh * 2, wh * 5, wh, wh], [0, 0], [0, wh]);
+HSEL.init([wh * 2, wh * 5, wh], [0, 0], [0, wh]);
 
 // HSEL.register(0, [0, 1], true, ()=>{}, ()=>{}, (per)=>{console.log(per)});
 
@@ -14,7 +14,9 @@ const bsvg = document.getElementsByClassName("bodySVG");
 const body = document.getElementById("body");
 const homeline = document.getElementById("homeline");
 
-HSEL.register(0, [0, 1], true, homeLoop, ()=>{}, homeLoop);
+HSEL.register(0, [0, 0.5], true, homeLoop, ()=>{}, homeLoop);
+
+// HSEL.register(0, [0, 1], true, ()=>{console.log(0)}, ()=>{console.log(1)}, (percent)=>{console.log(percent)});
 
 HSEL.register(0, [0.55, 1, 0.75], false,
     ()=>{

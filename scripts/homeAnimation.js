@@ -1,6 +1,6 @@
 import { ww, wh } from "./constant.js";
 
-const N = 10;
+const N = 8;
 const MINVEL = 1;
 const MAXVEL = 3;
 let width = 0, height = 0;
@@ -16,7 +16,7 @@ for (let l = 0; l < N; l++) {
     const nowElem = document.createElement("div");
     nowElem.classList.add("child");
 
-    coor.push({x: rand(0, ww * (l+1) / N), y: rand(0, wh * (l+1) / N) });
+    coor.push({x: l / N * (ww - width + 10), y: l / N * (wh - height)});
     vel.push({x: rand(-MAXVEL, MAXVEL), y: (Math.round(Math.random()) ? 1 : -1) * rand(MINVEL, MAXVEL)});   
     nowElem.innerHTML = `<h1>${(Math.round(Math.random()) ? "Padz" : "Code")}</h1>`;
     document.getElementById("home").appendChild(nowElem);
@@ -66,7 +66,7 @@ function cek2(i) {
         bot: coor[i].y + height
     }
 
-    if (obi.top <= 0 || obi.bot >= wh * 2) {
+    if (obi.top <= 0 || obi.bot >= wh) {
         vel[i].y *= -1;
     }
 

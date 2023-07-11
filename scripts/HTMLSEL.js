@@ -69,8 +69,6 @@ function loop() {
 }
 
 export function update(addition, scrollS, toMi) {
-    setPageWrapperDimension();
-    pageWrappperHeight = getPageWrapperHeight();
     if (addition && Array.isArray(addition)) {
         additional = addition.slice(0, pageWrapper.length);
     }
@@ -80,6 +78,9 @@ export function update(addition, scrollS, toMi) {
     if (toMi && Array.isArray(toMi)) {
         toMin = toMi.slice(0, pageWrapper.length);
     }
+
+    setPageWrapperDimension();
+    pageWrappperHeight = getPageWrapperHeight();
 }
 
 export function init(addition, scrollS, toMi) {
@@ -274,5 +275,5 @@ export function register(pageWrapperIdx, bound, interpolate, base, end, mid) {
 }
 
 export function test() {
-    console.log("Success Running HSEL!");
+    console.log("Success Running HSEL!", additional);
 }

@@ -20,6 +20,12 @@
     left: 0px;
 
     overflow: hidden;
+
+    stroke: black;
+    stroke-width: 0.0476em;
+    stroke-linejoin: round;
+    
+    z-index: 9999;
 }
 
 #body .background svg {
@@ -30,12 +36,6 @@
 
     stroke: black;
     stroke-width: 0.0467em;
-    stroke-linejoin: round;
-}
-
-#body .background {
-    stroke: black;
-    stroke-width: 0.0476em;
     stroke-linejoin: round;
 }
 
