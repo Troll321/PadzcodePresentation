@@ -1,7 +1,6 @@
 const button = document.querySelector('button');
 const link = document.querySelector('a');
 let active = false;
-console.log(button);
 
 link.addEventListener('click', (event) => {
     event.preventDefault();
@@ -11,7 +10,7 @@ link.addEventListener('click', (event) => {
         button.style.left = "";
         setTimeout(() => button.classList.add('expand'), 500);
         setTimeout(() => {
-            window.location.href = "https://static.zerochan.net/Miyama.Suzune.full.3263412.jpg";
+            window.location.href = "/";
         }, 1000);
     }
     else{
