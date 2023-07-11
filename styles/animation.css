@@ -12,10 +12,10 @@
 /* BODY */
 
 .bodySVG {
-    transition: transform 300ms, filter 100ms;
+    transition: transform 300ms, filter 200ms;
 }
 
-#body .background svg.bodySVG:hover {
+#body .background svg.bodySVG:hover, #body .background svg.bodySVG:focus {
     filter: drop-shadow(0px 0px 0px black);
 }
 
@@ -341,4 +341,29 @@ nav .title:hover {
 
 #mainpres .timeline .container .header:hover {
     opacity: 1;
+}
+
+#contact .gtc {
+    transition: padding-bottom 300ms, transform 300ms;
+}
+
+#contact .gtc:hover {
+    transform: translateY(calc(1em * 0.5));
+    padding-bottom: 1em;
+}
+
+#collection .content {
+    transition: box-shadow 300ms;
+}
+
+#collection .content:hover {
+    box-shadow: 0px 0px 0px black;
+}
+
+#collection .content .closer {
+    transition: opacity 300ms;
+}
+
+#collection .content:hover .closer {
+    opacity: 0.08;
 }

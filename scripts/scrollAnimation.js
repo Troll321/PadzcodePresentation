@@ -180,3 +180,5 @@ HSEL.register(2, [0.2], false,
         contact.classList.add("visible");
     }
 );
+
+// HSEL.register(1, [0, 1], true, ()=>{console.log(window.scrollY)}, ()=>{console.log(window.scrollY)}, ()=>{console.log(window.scrollY)})

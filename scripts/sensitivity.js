@@ -1,9 +1,7 @@
 import { update } from "./HTMLSEL.js";
-import { ww, wh } from "./constant.js";
+import { ww, wh, MIN, MAX } from "./constant.js";
 
 const sliderInputs = document.getElementsByClassName("sliderInput");
-const MAX = 5 * wh;
-const MIN  = -5 * wh;
 
 function inputHandler(e) {
     if (e.target === sliderInputs[0]) {

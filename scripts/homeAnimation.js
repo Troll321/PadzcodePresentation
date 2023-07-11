@@ -75,12 +75,10 @@ function cek2(i) {
     }
 }
 
-function set() {
+export function set() {
     width = parseInt(getComputedStyle(document.getElementsByClassName("child")[0]).width);
     height = parseInt(getComputedStyle(document.getElementsByClassName("child")[0]).height);
 }
-
-set();
 
 export function homeLoop() {
     updateCoor();
@@ -101,3 +99,5 @@ export function homeLoop() {
 
     draw();
 }
+
+window.addEventListener("resize", ()=>{set()});

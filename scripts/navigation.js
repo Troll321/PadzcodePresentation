@@ -10,3 +10,15 @@ window.addEventListener("click", (e)=>{
         mobileNav.classList.remove("visible");
     }
 })
+
+const hashLinks = document.getElementsByClassName("hashLinks");
+for (let l = 0; l < hashLinks.length; l++) {
+    const hashLink = hashLinks[l];
+    hashLink.addEventListener("click", (e)=>{
+        e.preventDefault();
+        setTimeout(()=>{
+            window.scrollBy(0, document.getElementById(e.target.dataset.id).getBoundingClientRect().top);
+        }, 0);
+        // console.log(document.getElementById(e.target.dataset.id));
+    })
+}

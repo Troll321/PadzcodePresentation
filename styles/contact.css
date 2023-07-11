@@ -104,11 +104,18 @@
 #contact .gtc {
     position: absolute;
     bottom: 4em;
+    transform: translateY(0px);
+
+    border-bottom: solid black 0.245em;    
+    padding-bottom: 0px;
+
+    text-decoration: none;
 }
 
 #contact .gtc h1 { 
     font-size: 3.238em;
     font-weight: 700;
-    text-decoration: underline;
-    line-height: 1.5em;
+    line-height: 1em;
+
+    text-decoration: none;
 }
