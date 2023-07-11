@@ -1,14 +1,16 @@
+import {ww} from "./constant.js";
+
 const navButton = document.getElementById("navButton");
 const mobileNav = document.getElementById("mobileNav");
-const navButtonIsi = document.getElementsByClassName("navButtonIsi");
 navButton.addEventListener("click", ()=>{
     mobileNav.classList.toggle("visible");
+    navButton.classList.toggle("visible");
 })
 
-window.addEventListener("click", (e)=>{
-    if(e.target !== mobileNav && e.target !== navButton && e.target !== navButtonIsi[0] && e.target !== navButtonIsi[1] && e.target !== navButtonIsi[2] && 
-        e.target !== document.getElementById("sliderInput") && e.target !== document.getElementsByClassName("innerContainer")[0]) {
+window.addEventListener("pointerdown", (e)=>{
+    if(e.clientX >= 0.7 * ww) {
         mobileNav.classList.remove("visible");
+        navButton.classList.remove("visible");
     }
 })
 

@@ -8,6 +8,22 @@
     transform: translateX(0%);
 }
 
+#navButton {
+    transition: row-gap 600ms, column-gap 600ms;
+}
+
+#navButton.visible {
+    row-gap: 0.1em;
+    column-gap: 0.1em;
+}
+
+#navButton div {
+    transition: transform 500ms;
+}
+
+#navButton.visible div {
+    transform: rotateY(180deg);
+}
 
 /* BODY */
 

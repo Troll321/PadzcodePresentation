@@ -28,11 +28,10 @@
 
     #body .main .questionSuperContainer {
         width: 27.4em;
-        /* font-size: 1.2vw; */
     }
 
     #body.expand .main .questionSuperContainer {
-        height: 54.255em;
+        height: 54.7em;
     }
 
     #mainpres .timeline {

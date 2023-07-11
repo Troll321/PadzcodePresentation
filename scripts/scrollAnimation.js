@@ -2,7 +2,7 @@ import * as HSEL from "./HTMLSEL.js";
 import { homeLoop } from "./homeAnimation.js";
 import { ww, wh } from "./constant.js";
 
-HSEL.init([wh * 6, wh * 5, wh], [wh * 4, 0], [0, wh]);
+HSEL.init([wh * 6, wh * 6, wh], [wh * 4, wh], [0, wh]);
 
 // HSEL.register(0, [0, 1], true, ()=>{}, ()=>{}, (per)=>{console.log(per)});
 
@@ -68,16 +68,19 @@ HSEL.register(0, [0.67, 0.75], true,
         // linecon.style.transform = "translateY(0%)";
         linecon.style.top = "0px";
         homeline.style.top = "0px";
+        homeline.style.height = `${2.6 * wh}px`;
     },
     ()=>{
         // linecon.style.transform = "translateY(-50%)";
         linecon.style.top = `${-wh}px`;
         homeline.style.top = `${-wh}px`;
+        homeline.style.height = `${2.6 * wh}px`;
     },
     (percent)=>{
         // linecon.style.transform = `translateY(${HSEL.countAP(percent, 0, -50)}%)`;
         linecon.style.top = `${HSEL.countAP(percent, 0, -wh)}px`;
         homeline.style.top = `${HSEL.countAP(percent, 0, -wh)}px`;
+        homeline.style.height = `${2.6 * wh}px`;
 
     }
 );

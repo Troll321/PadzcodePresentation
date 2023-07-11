@@ -16,7 +16,7 @@ for (let l = 0; l < N; l++) {
     const nowElem = document.createElement("div");
     nowElem.classList.add("child");
 
-    coor.push({x: l / N * (ww - width + 10), y: l / N * (wh - height)});
+    coor.push({x: l / N * (ww - width), y: l / N * (wh - height)});
     vel.push({x: rand(-MAXVEL, MAXVEL), y: (Math.round(Math.random()) ? 1 : -1) * rand(MINVEL, MAXVEL)});   
     nowElem.innerHTML = `<h1>${(Math.round(Math.random()) ? "Padz" : "Code")}</h1>`;
     document.getElementById("home").appendChild(nowElem);
@@ -79,6 +79,8 @@ export function set() {
     width = parseInt(getComputedStyle(document.getElementsByClassName("child")[0]).width);
     height = parseInt(getComputedStyle(document.getElementsByClassName("child")[0]).height);
 }
+
+set();
 
 export function homeLoop() {
     updateCoor();
