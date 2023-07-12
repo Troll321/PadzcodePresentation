@@ -94,7 +94,7 @@ export function init(addition, scrollS, toMi) {
 
     .page {
         width: 100%;
-        height: 100%;
+        height: 100lvh;
         position: fixed;
         top: 0;
         left: 0;

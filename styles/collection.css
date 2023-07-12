@@ -4,7 +4,7 @@ nav .link:nth-child(2) {
 
 #collection.superContainer {
     width: 100%; 
-    height: 100%;
+    height: 100lvh;
 
     display: flex;
     justify-content: flex-start;
