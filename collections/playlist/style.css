@@ -1,0 +1,207 @@
+@media screen and (min-width: 1000px) {
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#button{
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+button{
+    font-size: 30px;
+}
+#threeBar{
+    display: none;
+}
+
+#menu2{
+    display: none;
+}
+.Logo{
+    height: 14vh;
+    position: absolute;
+    left: 10vw;
+    top: -1vh;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Images/preparations_by_atryl_db124pt.png);
+    background-size: cover;
+    background-position: left;
+    position: fixed;
+}
+
+#background{
+    background-color: black;
+    width: 100vw;
+    height: 12vh;
+    opacity: 70%;
+    top: 0;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    opacity: 1;
+}
+.subMenu{
+    height:12vh;
+    width: 100px;
+    text-align: center;
+}
+
+.subMenu:hover {
+    background-color: gray ;
+    opacity: 0.5;
+}
+#menu{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    height: 12vh;
+    line-height: 12vh;
+    width: 100vw;
+}
+#text{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 70vh;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: justify;
+}
+}
+
+@media screen and (max-width: 1000px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #button{
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+    }
+    button{
+        font-size: 30px;
+    }
+    .gambar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #menu2{
+        flex-direction: column;
+        line-height: 5vh;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        top: 12vh;
+    }
+    .hidden{
+        display: none;
+    }
+    #background2{
+        background-color: rgb(0, 0, 0);
+        height: 25vh;
+        width: 30vw;
+        opacity: 0.7;
+        position: absolute;
+        top: 0vh;
+        z-index: 1;
+        right: 0;
+    }
+    .subMenu2{
+        height: 5vh;
+        width: 26vw;
+        text-align: left;
+        padding-left: 4vw;
+        position: relative;
+        z-index: 2;
+        right: 0;
+    }
+    .subMenu2:hover{
+        background-color: gray;
+        opacity: 0.7;
+    }
+    #threeBar{
+        height: 5vh;
+        position: relative;
+        top: 3.5vh;
+    }
+    #threeBar:hover{
+        background-color: gray;
+        opacity: 0.5;
+    }
+    .Logo{
+        height: 14vh;
+        position: relative;
+        top: -1vh;
+        display: block;
+    }
+    
+    #container{
+        height: 100vh;
+        width: 100vw;
+        background-image: url(Images/preparations_by_atryl_db124pt.png);
+        background-size: cover;
+        background-position: -200px 0;
+        position: fixed;
+    }
+    
+    #background{
+        background-color: black;
+        width: 100vw;
+        height: 12vh;
+        opacity: 70%;
+        top: 0;
+        position: fixed;
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: block;
+        opacity: 1;
+    }
+    .subMenu{
+        height:12vh;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .subMenu:hover {
+        background-color: gray ;
+        opacity: 0.5;
+    }
+    #menu{
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        right: 0;
+        height: 12vh;
+        line-height: 12vh;
+        width: 100vw;
+        display: none;
+    }
+    #text{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 50vh;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: justify;
+    }
+    }

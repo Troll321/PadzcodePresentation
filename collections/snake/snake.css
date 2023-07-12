@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-color: rgb(23, 64, 23);
+}
+.PadzCode {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(126, 174, 126);
+}

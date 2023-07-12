@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <button id="button"> Pencet </button> 
+    <style>
+        .le{
+            background-color: red;
+        } 
+        .kol{
+            background-color: blue;
+        }
+    </style>
+
+  
+    <script src="console.js"></script>
+</body>
+</html>
+
+<!-- variable -> adalah sebuah tempat untuk menyimpan sesuatu --> 
+
+<!-- let adalah fungsi variabel yang bisa diubah ketika dimasukan ke console.log-->
+<!-- Contoh let -> let Variabel = 69;
+                   console.log (Variabel)
+                
+                let harus ditulis diatas variabel sebelum memberi nilai ini berguna kalau untuk
+                membuat variabel a, b, c jamak
+                let a, b, c;
+                a = someting 
+            -->
+
+<!-- Kalau mau mengubah nilai Variabel tinggal -> Variabel = 420;
+                                                console.log (Variabel)-->
+
+<!-- const adalah fungsi variabel yang tidak bisa diubah nilai awalnya-->
+<!-- const Variabel = "Something"
+     console.log (Variabel)-->
+
+<!-- Ingat kalau kode selalu dibaca dari atas ke bawah--> 
+
+<!-- a = Bebek
+     b = cacing 
+    
+    a = b 
+    b = a 
+     
+    console.log (a)
+    console.log (b)
+
+    hasil = bebek
+--> 
+
+<!-- Tipe data primitif -> Number (nomor), string ("kata"), boolean (true/false)-->
+<!-- Sting dan number akan menjadi string-->
+<!-- tapi ingat datanya dibaca dari kiri ke kanan-->
+
+<!--  (*) // Kali, (/) // Bagi-->
+<!-- operasi perhitungan dihitung matematis-->
+
+<!--a = b mengubah nilai a ke b 
+    (a == b) maka akan dicek apabila a=b maka jawabannya akan true/false
+    (x && y) -> hanya akan true kalau kedua data x dan y value nya true 
+    (x || y) -> akan menjadi true bila salah satu value nya adalah true-->
+
+<!-- if (Something) { } adalah comand untuk melakukan sesuatu kalau nilainya true-->
+<!-- else if (something) { } adalah comand untuk melakukan sesuatu kalau nilainya bukan false tapi diberi syarat-->
+<!-- else (Something) { } adalah comend untuk melakukan sesuatu kalau nilainya false-->
+
+<!-- contoh penerapan -> 
+    
+let cuaca = "bersalju";
+
+let bawaPayung;
+if (cuaca == "mendung") {
+    bawaPayung = ("True")
+}
+
+else if (cuaca == "cerah") {
+    bawaPayung = ("False")
+}
+
+
+else if (cuaca == "hujan") {
+    bawaPayung = ("True" + "Tapi diusahakan jangan keluar rumah")
+}
+
+else {
+   bawaPayung =  ("Invalid, anda bukan penghuni katulistiwa")
+}
+
+console.log("harus bawa payung?" + bawaPayung);
+
+hasil -> harus bawa payungInvalid, anda bukan penghuni katulistiwa
+-->
+
+<!-- !x: dibaca tidak boleh menjadi jadi nilai. jadi yang sebelumnya true akan menjadi false
+     x = !y maka nilai -->
+
+<!-- prompt ("Pertanyaan"); bertujuan untuk membuat pop up yang dapat memperoleh jawaban user dari Pertanyaan tertentu
+-->
+
+<!-- (num % angka == sisa) untuk mencari kelipatan. Karena semua angka kelipatan yang dibagi sebuah bilangan prima kalau sisanya 0 maka itu kelipatan-->
+
+<!--misal : 
+    let num = prompt("Sebutkan angka")
+
+if (num % 5 == 0 && num % 3 == 0){
+    console.log("FizzBuzz")
+}
+else if (num % 3 == 0) {
+    console.log("Fizz")
+}
+else if (num % 5 == 0) {
+    console.log("Buzz")
+}
+else {
+    console.log(num)
+    
+    misal input = 9 -> Fizz, input 10 -> Buzz, input 15 -> FizzBuzz, imput 47 -> 47       
+}-->
+
+<!-- for-loop -> for ( let i = perulangan keberapa ; i <= mau diulang sampek berapa ; i = i +/-* kondisi) {
+        console.log(i + "sesuatu yang diulang")
+        hasil -> penomoran ke berapa + "sesuau yang diulang"
+
+
+  let num = prompt("Sebutkan angka")
+
+for(let i = 1; i <= num ; i = i+1){
+
+if (i % 5 == 0 && i % 3 == 0){
+    console.log("FizzBuzz")
+}
+else if (i % 3 == 0) {
+    console.log("Fizz")
+}
+else if (i % 5 == 0) {
+    console.log("Buzz")
+}
+else {
+    console.log(i)
+}
+}      
+}-->
+
+<!-- for(let baris=1; baris <= baris<=5;baris = baris + 1 ){
+    let str = "";
+    for(let kolom = 1; kolom <= 5; kolom = kolom + 1){
+        str=str + "*"
+    }
+    console.log(str);
+
+    hasil -> 
+    *****
+    *****
+    *****
+    *****
+
+model lain : 
+let batas = prompt ("Berapa tinggi segitiga")
+for(let baris = 1; baris <= batas;baris = baris + 1){
+    let str = "";
+    for(let kolom = 1; kolom <= baris; kolom = kolom+1)
+    str = str + "*";
+console.log(str)
+}
+
+hasil = segitiga siku siku dengan tinggi sesuai yang diketik
+misal ketik 10
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+
+ingat : <= adalah kurang dari sama dengan 
+
+}-->
+
+<!-- while(true/false) akan mengeloop selama statement masih true dihitung mulai dari 0-->
+<!-- break; cara untuk keluar dari loop terdekat (langsung selesai pindah scope) -->
+
+<!-- continue; cara untuk memulai langsung ke comand utama suatu scope tapi tidak keluar dari loop  -->
+<!-- Sekali lagi ingat, program itu dibaca dari atas ke bawah-->
+
+<!--obj = objek (kamus yang bisa diambil datanya), arr = array
+    let obj = {
+        a : "bek",
+        b : "kol"
+    };
+
+    let px = "a"
+cara mengambilnya console.log(obj)
+                  console.log(obj.a + "untuk spasi" obj.b) mengambil langsung dengan hasil bekkol
+                  console.log(obj[px]) mengambil data bahwa px itu obj a dan data a adalah bek maka yang keluar bek
+                  console.log(obj["a"]) mengambil data bahwa ada obj a dan data dalam a adalah bek maka keluar bek--> 
+
+<!-- contoh penerapan -> 
+
+let radhya = {
+tinggi : "150 cm",
+berat : "63 kg",
+ras : "mongoloid",
+agama : "Islam",
+ideologi : "komunis",
+warna_kulit : "HITAM"
+}
+
+let bek = prompt("Intel tentang Radhya")
+
+console.log(radhya [bek])
+
+dalam konteks ini nama objeknya adalah radhya-->
+
+<!-- array adalah sebuah kumpulan data yang bisa diambil sesuai dengan urutan dari kiri ke kanan  
+    Dari 0,1,2,3 misal let bek = [1, "String", true, {nama : "lol"}, [1,2]]-->
+    
+    <!--cara mengaksesnya console.log(bek[0/1/2/3]) kecuali kalau objek tetep harus pakai cara memanggil objek
+        .obj atau [obj]-->
+
+        <!-- fungsi sebuah tempat untuk membuat sesuatu yang berjalan berulang ulang
+    misal function bebek(something){
+        console.log("string" + nama + ", string" + umur);
+    }
+bebek('atila', 15);
+bebek('wafdan', 17);
+
+contoh : 
+function bebek(nama1, nama2){
+    console.log (nama1 + " suka sama " + nama2);
+}
+
+bebek(prompt(), prompt() );
+
+imput suka sama input
+
+`bisa juga console.log(`"someting" %[something])
+-->
+
+<!-- ingat agar sebuah fungsi bisa keluar hasilnya kalau menggunakan fungsi return harus di console.log(nama fungsi(isi))-->
+
+<!-- semua program hanya bisa dipakai kalau ada dalam scope nya kecuali fungsi bisa dipanggil
+fungsi return -> menyamakan input angka yang kita kasih untuk di jumlahkan-->
+
+<!-- parseInt adalah sebuah comand yang berfungsi untuk membantu prompt membaca number -->
+<!-- Misalkan 
+function calc (a, opr, b){
+    if (opr == "+") {
+        return a + b
+    }
+    else if(opr == "*") {
+        return a * b
+    }
+    else if(opr == "/") {
+        return a / b 
+    }
+    else if(opr == "-") {
+        return a - b
+    }
+    else {
+        return "ERROR"
+    }
+}
+
+console.log(calc (parseInt(prompt("masukan angka 1")), 
+                  prompt("masukan operasi perhitungan"), 
+                  parseInt(prompt("masukan angka 2" ))));  
+-->
+<!-- Console itu adalah sebuah sebuah objek bawaan yang bisa dipanggil untuk menerima argumen bebas 
+string, number, array, dll
+
+promt () berfungsi untuk menyimpan/menerima string -->
+
+<!-- console adalah objek dan console.log adalah fungsi-->
+
+<!-- DOM sebuah fungsi di html yang berfungsi untuk menambah properti, elemen baru, mengilangkan elemen
+mengubah fungsi didalam webnya yang bisa dipakai dengan memakai quaryselector -> getElementBy
+
+cons a = document.getElementById("Something")
+
+ cons hanya bisa diubah propertinya
+
+ innerHTML mengubah atau mengeset isi dari html di web
+
+ contoh interaksi
+ a.innerHTML, a.clasList, a.style
+console.log(a.innerHTML);
+a.innerHTML = -->
+    
+
+<!-- event listener adalah sebuah comand untuk menyimak event yang terjadi di windows untuk menambahkan fungsi baru
+misal 
+
+function handleClick{
+
+}
+element.eventListener("click", handleClick-->
+
+<!-- perintah idnya ada di html sementara element something nya di js
+
+fungsi toggle untuk menyalakan atau mematikan sebuah fungsi-->
+<!--const bek = document.getElementById("button")
+
+function handleclick() {
+    bek.classList.toggle("le")
+}
+
+bek.addEventListener("click", handleclick) -->
+<!--  <script src="console.js"></script> harus ditaruh dibawah id atau aturan tambahan yang ada-->
+
+<!-- on sesuatu yang ditulis di html akan bisa menjadi pemandu event-->
+<!--   <link rel="stylesheet" href=""> untuk mengimpor css / link:css-->
+<!-- <a href=""></a> link website
+<img src="asal gambar" alt="muncul kalau nggak valid sourcenya">  gambar
+<br> break line -> Garis kosong
+
+-->
+
+
+<!-- 
+    Di HTML :
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <button id="button"> Pencet </button> 
+    <button></button>
+    <style>
+        .le{
+            background-color: red;
+        }
+    </style>
+    <script src="console.js"></script>
+</body>
+</html>
+
+Di .Js 
+const bek = document.getElementById("button")
+
+function handleclick() {
+    bek.classList.toggle("le")
+}
+
+bek.addEventListener("click", handleclick)
+
+akan menghasilkan button dengan warna yang berubah menjadi merah ketika di klik sekali dan jadi putih setelah di klik lagi
+-->
+
+<!--class, id bisa digunakan untuk memberi siat elemen
+# memanggil id
+. memanggil class-->
+
+<!-- .bebek.padma{ } yang kenak kelas bebek padma  tapi ingat clas bebek (kalau ada) juga bakal kena proses
+tapi tenang css akan memilih class yang paling spesifik sehingga hasilnya tak terpengaruh
+p{} juga bisa dipakai untuk memilih semua paragraf-->
+
+<!-- id lebih didahulukan daripada class-->
+
+<!-- pemanggil clas/id yang hanya satu saja namanya selector sementara yang lebih dari satu adalah 
+combinator
+
+div p {} memilih semua element p yang merupakan turunan dari div
+atau bisa juga div.nama class{ } biar lebih spesifik
+kalau mau cuma memilih anak pertama maka pakai div.nama class > p {}
+-->
+
+<!-- width : angkaem untuk memperbesar width 8 kalinya front
+
+    cara membuat tombol yang berubah ubah warna
+const bek = document.getElementById("button")
+
+function handleclick() {
+    bek.classList.toggle("le")
+}
+function doublehandleclick() {
+    bek.classList.toggle("kol")
+}
+
+bek.addEventListener("click", handleclick) 
+
+bek.addEventListener("dblclick", doublehandleclick )--> 
+
+<!-- padding untuk meremove batas yang lama
+
+body html -> html didalam body
+body, html body dan html--> 
+
+<!-- tempate css 
+    * {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    position: relative;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}-->
+
+<!-- relative atas bawah, absolute -> tak terpengaruh sama elemen lain, sticky ->awalnya relative tapi jadi fixed
+, fixed -> selalu mengikuti layar posisinya tidak ikut berubah, static -> bertumpuk biasa diam tidak bisa diatur
+
+absolute hanya akan mengikuti position dari parent yang bukan static, kalau tidak ada mengikuti body
+
+z-index untuk membuat posisi depan belakang-->
+
+<!-- justify contentent -> mengatur ke sumbu utama
+align item -> mengatur sesuai sumbu kedua/secondary
+
+tergantung flex direction-->
+
+<!-- misal 
+
+css = 
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    position : relative
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+div{
+    border: black solid 2px;
+}
+
+.satu{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    opacity: 1;
+    border-radius: 10%;
+  
+}
+
+.dua{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    top: 80px;
+    left: 80px;
+    opacity: 0.6;
+    border-radius: 10%;
+     
+}
+
+html = 
+! + <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <div class="satu">
+    </div>
+    <div class="dua">
+
+       </div>
+</body>
+</html>
+
+hasilnya = kotak warna merah yang ditindihi oleh kotak warna biru blur di pojok kanan bawah
+-->
+
+<!-- pseudo selector -> mirip seperti event listener untuk memberi efek tertentu
+div:hover, div:
+
+transition -> waktu yang dibutuhkan untuk melaksanakan event tersebut
+-->
+
+<!-- misal 
+css = 
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    position : relative
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+div{
+    width: 50px;
+    height: 50px;
+    border: black solid 2px;
+}
+
+.satu{
+    background-color: red;
+}
+
+.satu:hover{
+    width : 500px;
+    transition : all 500ms;
+}
+
+.dua{
+ background-color: blue;
+
+}
+
+.dua:hover {
+    width : 1000%;
+    transition : all 100s;
+}
+
+html ->
+! +  <title>Document</title>
+  <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <div class="satu">
+    </div>
+
+    <div class="dua">
+
+    </div>
+</body>
+</html>
+
+-->
+
+<!-- kalau class="class1 clas2" berarti nama clas nya jadi dua jadi bisa digabung semuanya jadi class1 tapi kalau mau spesifik harus class1.class2-->
+<!-- misal di css :
+    
+    * {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    position : relative
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.parent{
+    width: 100px;
+    height: 300px;
+    background-color: white;
+    border : black solid;
+    position : absolute
+}
+
+.parent:hover .child {
+    background-color: yellow;
+}
+
+.child{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: 300ms;
+    border: black solid;
+}
+
+.child.c1{
+    background-color: red;
+   top : 2px;
+}
+
+.child.c2{
+   
+    background-color: blue;
+    top: 50px;
+}
+
+.child.c3{
+   
+    background-color: purple;
+    top : 100px;
+}
+
+
+di html -> 
+ <title>Document</title>
+  <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <div class = "parent">
+        <div class="child c1">
+
+        </div>
+        <div class="child c2">
+            
+        </div>
+        <div class="child c3">
+
+        </div>
+</div>
+            
+
+
+</body>
+</html>
+
+jadinya nanti ada kotak tiga vertikal dengan sebuah jarak yang merupakan child dari sebuah persegi panjang yang menaungi semua (parent)
+dan ketika mouse di hover diatas parent maka nanti semua warna child akan berubah kuning
+-->
+
+<!-- px, cm, m adalah satuan baku
+sementara em adalah satuan relative berapakali font size sesuai elemennya berlaku aturan parent, child
+ada juga aturan rem adalah satuan relatif berapakali font size sesuai dengan elemen pusatnya (misal = html)-->
+
+<!-- vw dan vh adalah viewport weight dan viewport height jadi berfungsi untuk mengambil berapa persen dari total layar yang bisa dilihat-->
+<!-- % adalah satuan mirip vw dan vh tetapi mereka akan mengambil beberapa persen ukuran dari parentnya-->
+<!-- input >
