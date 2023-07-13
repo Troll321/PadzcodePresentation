@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    position : relative
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.parent{
+    width: 50vw;
+    height: 50vh;
+    background-color: red;
+    border: black solid;
+    flex-direction: column;
+}
+
+.child{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    border: black solid;
+}
+
+.child2{
+    width: 50%;
+    height: 50%;
+    background-color: purple;
+    border: black solid;
+}
+
+.child3{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    border: black solid;
+}
+
+.child4{
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    border: black solid;
+}
