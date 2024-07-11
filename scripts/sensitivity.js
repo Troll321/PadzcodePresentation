@@ -1,5 +1,5 @@
 import { update } from "./HTMLSEL.js";
-import { ww, wh, MIN, MAX } from "./constant.js";
+import { wh } from "./constant.js";
 
 const sliderInputs = document.getElementsByClassName("sliderInput");
 
@@ -10,8 +10,8 @@ function inputHandler(e) {
         sliderInputs[0].value = sliderInputs[1].value;
     }
 
-    const toAdd = (100-e.target.value) / 100 * (MAX - MIN) + MIN;
-    update([wh * 6 + toAdd, wh * 6 + toAdd,  wh + toAdd], [wh * 4 + toAdd, wh + toAdd], [0, wh]);
+    const percent = (100-parseInt(e.target.value)) / 100;
+    update([wh * 6 * percent, wh * 6 * percent,  wh * percent], [wh * 4 * percent, wh * percent], [0, wh * percent]);
 }
 
 for (let l = 0; l < sliderInputs.length; l++) {
