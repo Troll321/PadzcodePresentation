@@ -1,0 +1,116 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 12;
+    background-color: #F7FFE5;
+  }
+  * {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    position: relative;
+
+}
+
+  #app {
+    width: 100vw;
+    height: 100vh;
+    background: #F7FFE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doors {
+    display: flex;
+  }
+  
+  .door {
+    background: #C4D7B2;
+    width: 100px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .boxes {
+    transition: transform 1s ease-in-out;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+  
+  .buttons {
+    margin: 1rem 0 2rem 0;
+    z-index: 2;
+    position: relative;
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0 0.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #A0C49D;
+  }
+  
+  .info {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .topbar{
+    background-color:#A0C49D;
+    width: 100vw;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    z-index: 1;
+
+  }
+
+  #topbutton{
+    position: absolute;
+    left: 0;
+    margin: 10px;
+    bottom: 0px;
+    z-index: 2;
+    background-color: #eb2854;
+    width: 50px;
+    height: 50px;
+  }
+
+  .texttopbar{
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    top: 0;
+    font-family:monospace ;
+    color: #F7FFE5;
+  }
+
+  .img{
+    position: fixed;
+    object-fit: cover;
+    opacity: 0.3;
+    top: 1rem;
+    object-position: 50px;
+    height: 100%;
+    right: 0;
+
+  }

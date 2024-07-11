@@ -1,0 +1,34 @@
+.bebek{
+    border-radius: 5%;
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid;
+    background-color: aqua;
+    width: 250px;
+    height: 180px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    
+}
+
+.bek{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.header{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    margin-bottom: 20px;
+}

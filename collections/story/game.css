@@ -1,0 +1,145 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    position : relative
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;;
+}
+
+.background{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.kapal{
+    width: 100%;
+    height: 20em;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 4em;
+}
+
+.Opening{
+    font-size: 4em;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    top: 25rem;
+}
+
+.tombolmulai{
+    font-size: 4em;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    top: 25rem;
+}
+
+.gambarutama{
+position :relative;
+width: 100%;
+height: 100%;
+
+}
+
+.judul1{
+    font-size: 4em;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.text1{
+    color: white ;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+    top: 4em;
+    font-size: 1.7em;
+}
+
+.text2{
+    color: white ;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+    top: 3em;
+    font-size: 3em;
+
+}
+
+.text3{
+    color: white ;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+    font-size: 1em;
+}
+
+.tombol{
+    width: 100%;
+    height:3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.tombol1{
+    width: 100%;
+    height:2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 1rem;
+ 
+}
+.tombol2{
+    width: 100%;
+    height:10rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 2rem;
+    
+}
+
+.tombol3{
+    width: 100%;
+    height:10rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 5rem;
+}

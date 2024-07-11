@@ -85,6 +85,7 @@ nav .link:nth-child(2) {
     position: absolute;
     top: 0px;
     left: 0px;
+    object-fit: cover;
 }
 
 #collection .snapshot .closer {
